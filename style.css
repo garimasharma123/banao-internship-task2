@@ -1,0 +1,996 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.section {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    border-bottom: 1px solid #ccc;
+}
+.wrapper {
+    overflow-x: auto;
+}
+
+#sections-container {
+    display: flex;
+    flex-direction: column;
+}
+.half {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.left {
+    background-color: #0b28e0;
+}
+.right {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./images/interior.jpg') ;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container img {
+    max-width: 90%;
+    height: auto;
+    animation: slideFromBottom 2s forwards;
+}
+@keyframes slideFromBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        background-size: contain;
+    }
+}
+.left1 {
+    background-color: #174803;
+}
+.right1 {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgb(50, 127, 50);
+}
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 60px;
+    padding-top: 80px;
+    
+}
+.container1 img {
+   max-width: 50%;
+    height: auto;
+    width: 200px;
+    animation: slideFromBottom1 2s forwards;
+}
+@keyframes slideFromBottom1 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .container1 img {
+        width: 100%;
+    }
+}
+.left2 {
+    background-color: #6f1fb5;
+}
+.right2 {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: gainsboro;
+}
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+     align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.container2 img {
+    max-width: 48%;
+    height: auto;
+    margin: 1%;
+}
+.image1 {
+    animation: slideFromTop2 2s forwards;
+}
+.image2 {
+    animation: slideFromBottom2 2s forwards;
+}
+@keyframes slideFromTop2 {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideFromBottom2 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .container2 img {
+        max-width: 100%;
+        margin: 5px 0;
+        width: 250px;
+    }
+}
+.left3 {
+    background-color: #101145;
+}
+.right3 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(39, 28, 159);
+}
+.container3 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.topright {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    max-height: 60%;
+    animation: slideFromTop3 2s forwards;
+}
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    max-height: 70%;
+    animation: slideFromBottom3 2s forwards;
+}
+@keyframes slideFromTop3 {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideFromBottom3 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .topright, .bottomleft {
+        width: 100px;
+    }
+}
+.left4 {
+    background-color: #5521d0;
+}
+.right4 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(40, 10, 95);
+}
+.container4 {
+   position: relative;
+    width: 100%;
+    height: 100%;
+    left: 5%;
+}
+.topright1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-height: 70%;
+    animation: slideFromTop4 2s forwards;
+    padding-right: 20px;
+}
+.bottomleft1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: slideFromBottom4 2s forwards;
+    max-height: 70%;
+    padding-left: 20px;
+}
+@keyframes slideFromTop4 {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideFromBottom4 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 768px) {
+    .topright1, .bottomleft1 {
+        width: 200px;
+    }
+}
+.left5 {
+    background-color: #0c244d;
+}
+.right5 {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: black;
+}
+.container5 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container5 img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.pizza_box {
+    top: 0;
+    left:0;
+    max-height: 20%;
+    animation-name: slideFromTop5;
+}
+.dominos-bread {
+    top:0;
+    right: 30px;
+    max-width: 80%;
+    max-height: 30%;
+    animation-name: slideFromTop5;
+}
+.dominos-bread-sliced {
+    bottom: 0;
+    right: 0;
+    animation-name: slideFromBottom5;
+    padding-top: 50px;
+    width: 150px;
+    max-height: 50%;
+}
+.dominoes-full {
+    top: 40%;
+    right: 0;
+    transform: translateY(-50%);
+    padding-right: 100px;
+    max-height: 50%;
+    animation-name: slideFromTop5;
+}
+.domi {
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    max-height: 100%;
+    padding-left: 100px;
+    animation-name: slideFromBottom5;
+}
+@keyframes slideFromTop5 {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideFromBottom5 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .pizza_box, .dominos-bread, .dominos-bread-sliced, .dominoes-full, .domi {
+    width: 40%;
+    }
+}
+@media (max-width: 480px) {
+    .pizza_box, .dominos-bread, .dominos-bread-sliced, .dominoes-full, .domi {
+        width: 60%;
+        
+    }
+}
+.left6 {
+    background-color: #1542d6;
+}
+.right6 {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background: rgb(46, 195, 214);
+}
+.container6 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.container6 img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+.karavan {
+    top: 0;
+    left: 0;
+    width: 20%;
+    max-height:50% ;
+    animation-name: slideFromTop6;
+    padding-left: 80px;
+}
+.social {
+    top: 0;
+    left: 300px;
+    max-width: 50%;
+    max-height: 50%;
+    padding-top: 0;
+    animation-name: slideFromTop6;
+}
+.developers {
+    bottom: 10px;
+    right: 5%;
+    animation-name: slideFromBottom6;
+    max-width: 50%;
+    max-height: 50%;
+    
+}
+.karavan2{
+    top: 60%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 20%;
+    padding-right: 200px;
+    max-height: 70%;
+    padding-bottom: 60px;
+    animation-name: slideFromTop6;
+}
+.karavan3 {
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    max-height: 50%;
+    padding-left: 50px;
+    animation-name: slideFromBottom6;
+}
+@keyframes slideFromTop6 {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideFromBottom6 {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    .karavan, .social, .karavan2, .karavan3, .developers { 
+        
+    width: 40%;
+    }
+}
+@media (max-width: 480px) {
+    .karavan, .social, .karavan2, .karavan3, .developers { 
+        width: 60%;
+        
+    }
+}
+.left-bottom{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    margin: 0; 
+    color: aliceblue;
+}
+.head1{
+    position: absolute;
+    bottom: 150px;
+    left: 20px;
+    margin: 0; 
+    font-weight: 700;
+    font-size: 40px;
+    color: aliceblue;
+}
+.img1{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img1 img{
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
+.image{
+    bottom: 180px;
+    left: 0;
+    width: 100%;
+    max-height: 40%;
+    padding-left: 5px;
+}
+.head2{
+    font-weight: 600;
+    color: aliceblue;
+    position: absolute;
+    bottom: -450px;
+    left: 20px;
+    font-size: 30px;
+    margin: 0; 
+}
+.left-bottom1{
+    position: absolute;
+    color: aliceblue;
+    font-size: 20px;
+    bottom: -550px;
+    left: 20px;
+    margin: 0;
+}
+.img2{
+     width: 100%;
+     height: 100%;
+    position: relative;
+}
+.img2 img{
+    position: absolute;
+    width: 100%;
+    height:auto ;
+}
+.image3{
+    bottom: 180px;
+    left: 0;
+  min-width: 200px;
+  min-height: 100px;
+    padding-left: 5px;
+}
+.head3{
+    font-weight: 600;
+    color: aliceblue;
+    position: absolute;
+    bottom: -1020px;
+    left: 20px;
+    font-size: 30px;
+    margin: 0; 
+}
+.left-bottom2{
+    position: absolute;
+    color: aliceblue;
+    font-size: 15px;
+    bottom: -1110px;
+    left: 20px;
+    margin: 0;
+}
+.head4{
+    font-weight: 600;
+    color: aliceblue;
+    position: absolute;
+    bottom: -1600px;
+    left: 20px;
+    font-size: 30px;
+    margin: 0; 
+}
+.left-bottom3{
+    position: absolute;
+    color: aliceblue;
+    font-size: 15px;
+    bottom: -1700px;
+    left: 20px;
+    margin: 0;
+}
+.head5{
+    font-weight: 600;
+    color: aliceblue;
+    position: absolute;
+    bottom: -2200px;
+    left: 20px;
+    font-size: 30px;
+    margin: 0; 
+}
+.left-bottom4{
+    position: absolute;
+    color: aliceblue;
+    font-size: 15px;
+    bottom: -2300px;
+    left: 20px;
+    margin: 0;
+}
+.head6{
+    font-weight: 600;
+    color: aliceblue;
+    position: absolute;
+    bottom: -2800px;
+    left: 20px;
+    font-size: 30px;
+    margin: 0; 
+}
+.left-bottom5{
+    position: absolute;
+    color: aliceblue;
+    font-size: 15px;
+    bottom: -2900px;
+    left: 20px;
+    margin: 0;
+}
+.head7{
+    font-weight: 600;
+    color: aliceblue;
+    position: absolute;
+    bottom: -3400px;
+    left: 20px;
+    font-size: 30px;
+    margin: 0; 
+}
+.left-bottom6{
+    position: absolute;
+    color: aliceblue;
+    font-size: 15px;
+    bottom: -3500px;
+    left: 20px;
+    margin: 0;
+}
+h, p1 {
+    margin: 10px 0;
+}
+
+.head1, .head2, .head3, .head4, .head5, .head6, .head7,
+.left-bottom, .left-bottom1, .left-bottom2, .left-bottom3, .left-bottom4, .left-bottom5, .left-bottom6 ,.hl,.mid1,.mid2,.mid3,.mid4,.mid5,.mid6,.mid7,.mid8,.mid9,.mid10,.mid11,.mid12,.mid13,.hl1,.hl2,.hl3,.hl4,.hl5{
+    animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slide-in 1s ease-in-out;
+}
+
+.cont {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 5%;
+    bottom: 25%;
+}
+
+svg {
+    max-width: 50%;
+    max-height: 50%; 
+    border-radius: 50%;
+    background: #0b28e0;
+}
+#transring {
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+}
+
+.dot {
+    cursor: pointer;
+    transition: fill 0.3s ease;
+}
+@keyframes dash {
+    from {
+        stroke-dasharray: 0, 1000;
+    }
+    to {
+        stroke-dasharray: 1000, 0;
+    }
+}
+
+.transrg {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: dash 5s linear forwards;
+}
+
+/* Color change on click */
+.dot.active {
+    fill: #0092ff; /* Change to your desired active color */
+}
+
+.transrg.active {
+    stroke: rgb(245, 245, 245); /* Change to your desired active color */
+}
+.hl{
+    color: aliceblue;
+    font-size: 40px;
+    position: relative;
+    bottom: 22%;
+    left: 45%;
+}
+.mid1{
+    position: relative;
+    color: aliceblue;
+    font-size: 15px;
+    right: 1%;
+    bottom: 29%;
+}
+.mid2{
+    position: relative;
+    color: aliceblue;
+    bottom: 14%;
+    font-size: 15px;
+}
+.hl1{
+    position: relative;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 800;
+    bottom: 20%;
+    left: 30%;
+}
+.mid3{
+    position: relative;
+    color: aliceblue;
+    bottom:28%;
+    font-size: 20px;
+    right: 15%;
+}
+.mid4{
+    position: relative;
+    color: aliceblue;
+    bottom:13%;
+    font-size: 20px;
+    right: 1%;
+}
+.hl2{
+    position: relative;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 800;
+    bottom: 20%;
+    left: 25%;
+    }
+.mid5{
+    color: aliceblue;
+    position: relative;
+    font-size: 15px;
+    bottom: 12%;
+}
+.img3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.img3 img{
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+}
+.image4{
+    width: 40%;
+    max-height: 40%;
+    left: 90%;
+    top: 25%;
+}
+.mid6{
+    color: aliceblue;
+    position: relative;
+    font-size: 15px;
+    bottom: 160px;
+    right: 30px;
+}
+.mid7{
+    color: aliceblue;
+    position: relative;
+    font-size: 15px;
+    bottom: 60px;
+    right: 10px;
+}
+.hl3{
+    position: relative;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 800;
+    left: 40%;
+    bottom: 20%;
+}
+.mid8{
+    position: relative;
+    color: aliceblue;
+    font-size: 20px;
+    bottom: 26%;
+}
+.mid9{
+    position: relative;
+    color: aliceblue;
+    font-size: 20px;
+    bottom: 12%;
+    left: 10%;
+}
+.hl4{
+    position: relative;
+    color: aliceblue;
+    bottom: 20%;
+    left: 40%;
+    font-size: 40px;
+    font-weight: 800;
+}
+.mid10{
+    position: relative;
+    color: aliceblue;
+    font-size: 20px;
+    bottom: 27%;
+    right: 5%;
+}
+.mid11{
+    position: relative;
+    color: aliceblue;
+    font-size: 20px;
+    bottom: 12%;
+    left: 5%;
+}
+.hl5{
+    position: relative;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 800;
+    bottom: 20%;
+    left: 40%;
+}
+.mid12{
+    position: relative;
+    color: aliceblue;
+    font-size: 20px;
+    bottom: 27%;
+    right: 10%;
+}
+.mid13{
+    position: relative;
+    color: aliceblue;
+    font-size: 20px;
+    bottom: 13%;
+} 
+.right, .left, .right1, .left1, .right2, .left2, .right3, .left3, .right4, .left4, .right5, .left5, .right6, .left6 {
+    flex: 1 1 50%; 
+}
+.skip{
+    position: fixed;
+    color: aliceblue;
+    font-size: 40px;
+    font-weight: 300;
+    right: 50%;
+    bottom: 0;
+}
+@media  screen and (max-width:600px) {
+    .section{ 
+    display: flex;
+    flex-direction: column;
+    }
+    
+    svg{
+    display: none;
+    }
+    .right, .right1, .right2, .right3, .right4, .right5, .right6 {
+        order: 1;
+    }
+    .left, .left1, .left2, .left3, .left4, .left5, .left6 {
+        order: 2;
+    }
+    .hl,.hl1,.hl2,.hl3,.hl4,.hl5{
+        display: none;
+    }
+    .mid1,.mid2,.mid3,.mid4,.mid5,.mid6,.mid7,.mid8,.mid9,.mid10,.mid11,.mid12,.mid13{
+        display: none;
+    }
+    .head1{
+        font-size: 40px;
+        bottom: 25%;
+    }
+    @keyframes slide-in {
+        display : none;
+    }
+    .container,.container1,.container2,.container3,.container4,.container5,.container6{
+        width: 50%;
+        height: 50%;
+    }
+    .container img {
+        max-width: 90%;
+        height: auto;
+    }
+    @keyframes slideFromBottom {display: none; }
+    @keyframes slideFromBottom1 {display: none; }
+    @keyframes slideFromBottom2 {display: none; }
+    @keyframes slideFromBottom3 {display: none; }
+    @keyframes slideFromBottom4 {display: none; }
+    @keyframes slideFromBottom5 {display: none; }
+    @keyframes slideFromBottom6 {display: none; }
+    @keyframes slideFromTop2 {display: none;}
+    @keyframes slideFromTop3 {display: none;}
+    @keyframes slideFromTop4 {display: none;}
+    @keyframes slideFromTop5 {display: none;}
+    @keyframes slideFromTop6 {display: none;}
+    .img1{
+        width: 50%;
+        height: 50%;
+        top: 30%;
+        right: 25%;
+    }
+.container2 img{
+    width: 50%;
+}
+.img2 img{
+    width: 20%;
+    height: 20%;
+}
+.image4{
+    display: none;
+}
+.topright{
+    width: 40%;
+    height:90%;
+    left: 50%;
+    top: 20%;
+}
+.bottomleft{
+    width: 50%;
+    height: 90%;
+    left: 1%;
+    top: 50%;
+}
+.topright1{
+    width: 40%;
+    height: 100%;
+    top: 2%;
+}
+.bottomleft1{
+    width: 40%;
+    height: 100%;
+    top: 30%;
+}
+#sections-container {
+    flex-direction: row;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: calc(100% * 7);
+}
+.section {
+    min-width: 100vw;
+    height: 100vh;
+}
+.dominos-bread,.dominos-bread-sliced,.pizza_box{
+    display: none;
+}
+.dominoes-full {
+    top: 40%;
+    right: 40%;
+    padding-right: 100px;
+    max-height: 100%;
+
+}
+.domi {
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    min-height: 100%;
+    padding-left: 100px;
+}
+.skip{
+    font-size: 20px;
+    bottom: 10%;
+    right: 10%;
+}
+
+}
+
+
